@@ -161,10 +161,10 @@
                             <div class="p-3" style="max-width: 700px;">
                                 <h1 class="display-3 text-white mb-4 animated slideInDown hover-container " >
 
-<div id="default_text" name="default_text">A View of Luxury Like No Other.</div>
+<div id="default_text" >A View of Luxury Like No Other.</div>
 <div class="hover-text">
     <button id="hoverbutton">RECONNECT</button>
-    <button id="hoverbutton" onclick="showPrompt(0)"> EDIT </button>
+    <button id="hoverbutton" onclick="showPrompt()"> EDIT </button>
 
   </div>
 
@@ -180,10 +180,10 @@
                             <div class="p-3" style="max-width: 700px;">
                                 <h1 class="display-3 text-white mb-4 animated slideInDown hover-container">
 
-                                    <div id="default_text" name="default_text">A Luxurious Stay with a View</div>
+                                    <div id="default_text" >A Luxurious Stay with a View</div>
                                     <div class="hover-text">
                                         <button id="hoverbutton">RECONNECT</button>
-                                        <button id="hoverbutton" onclick="showPrompt(1)"> EDIT </button>
+                                        <button id="hoverbutton" onclick="showPrompt()"> EDIT </button>
                                     
                         </div>
 
@@ -266,7 +266,7 @@
                             <div id="default_text" name="default_text">"Experience Unforgettable Luxury Stay in the Hills"</div>
                             <div class="hover-text">
                                 <button id="hoverbutton">RECONNECT</button>
-                                <button id="hoverbutton" onclick="showPrompt(2)"> EDIT </button>
+                                <button id="hoverbutton" onclick="showPrompt()"> EDIT </button>
                             
                               </div>
 
@@ -274,6 +274,11 @@
                             </h1 class=hover_container>
 
 Luxury stay w/ cafe offering stunning hill views &amp; memorable experiences.</p>
+<div class="hover-text">
+    <button id="hoverbutton">RECONNECT</button>
+    <button id="hoverbutton" onclick="showPrompt()"> EDIT </button>
+
+  </div>
 
 </h1>
                         <div class="row g-3 pb-4">
@@ -761,18 +766,20 @@ Gurvinder: "Monk Hut Cafe is a paradise!"</p>
 
     <!-- Template Javascript -->
     <script src="./Monk Hut Cafe_files/main.js"></script>
-    
-   
-    <script>
+
+    ><script>
         // Function to display the prompt with default text from HTML tag
         function showPrompt() {
-          var defaultText = document.getElementByName('default_text').textContent; // Get text from HTML tag
-          var userInput = prompt('Enter your name:', defaultText);
+          var defaultText = document.getElementById('default_text').textContent; // Get text from HTML tag
+          var userInput = prompt('Description', defaultText);
           if (userInput !== null) {
-            alert('Description ' + userInput + '!');
+            alert('edit ' + userInput + '!');
           }
         }
       </script>
+    
+   
+   
 
     </body>
-    </html>
+    </html
